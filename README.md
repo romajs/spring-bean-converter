@@ -36,7 +36,7 @@ At your `@SpringBootApplication`, add the following:
 public class SomeComponent {
 
     @Autowired
-    romajs.spring.bean.converter.BeanConverter beanConverter;
+    romajs.spring.BeanConverter beanConverter;
 
     @romajs.spring.annotation.BeanConverter
     public Response convertToResponse(SomeEntity someEntity) {

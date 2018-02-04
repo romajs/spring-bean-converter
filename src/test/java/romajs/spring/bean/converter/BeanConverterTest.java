@@ -1,11 +1,15 @@
 package romajs.spring.bean.converter;
 
-import romajs.spring.bean.converter.exception.BeanConverterNotFoundException;
+import romajs.spring.BeanConverter;
+import romajs.spring.exception.BeanConverterNotFoundException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -39,7 +43,20 @@ public class BeanConverterTest {
 
         final SecondClass secondClass = beanConverter.convert(firstClass, SecondClass.class);
         assertNotNull(secondClass);
-        assertEquals(secondClass.bar, "123");
+        assertEquals("123", secondClass.bar);
+    }
+
+    @Test
+    public void shouldConvertListFromFirstClassToSecondClass() {
+        final FirstClass firstClass = new FirstClass();
+        firstClass.foo = 123L;
+
+        final List<FirstClass> firstClassList = Arrays.asList(firstClass);
+
+        final List<SecondClass> secondClassList = beanConverter.convertList(firstClassList, SecondClass.class);
+        assertNotNull(secondClassList);
+        assertEquals(1, secondClassList.size());
+        assertEquals("123", secondClassList.get(0).bar);
     }
 
     @Test(expected = BeanConverterNotFoundException.class)
