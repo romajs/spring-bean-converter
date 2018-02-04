@@ -41,4 +41,5 @@ jobs:
       - run: mvn verify
 
       # upload test coverage
-      - run: bash <(curl -s https://codecov.io/bash)
+      - run: bash <(curl -s https://codecov.io/bash) -F unit-tests -f target/surefire-reports
+      - run: bash <(curl -s https://codecov.io/bash) -F integration-tests -f target/failsafe-reports
