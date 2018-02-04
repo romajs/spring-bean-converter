@@ -86,7 +86,7 @@
                     </execution>
                     <execution>
                         <id>jacoco-site</id>
-                        <phase>test</phase>
+                        <phase>post-integration-test</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>
