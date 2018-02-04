@@ -1,6 +1,6 @@
 # spring-bean-converter
 
-Created decoupled and reusable bean converters, by simply annotating methods with `@BeanConverter`
+Create decoupled and reusable bean converters, by simply annotating methods with `@BeanConverter`
 
 [![java-jdk](https://img.shields.io/badge/java%20jdk-1.8-brightgreen.svg)]()
 [![spring-boot](https://img.shields.io/badge/spring%20boot-1.5.9.Release-brightgreen.svg)]()
@@ -23,7 +23,7 @@ Created decoupled and reusable bean converters, by simply annotating methods wit
     <dependency>
         <groupId>romajs.spring</groupId>
         <artifactId>spring-bean-converter</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </dependency>
 </dependencies>
 ```
