@@ -23,7 +23,7 @@ Create decoupled and reusable bean converters, by simply annotating methods with
     <dependency>
         <groupId>romajs.spring</groupId>
         <artifactId>spring-bean-converter</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </dependency>
 </dependencies>
 ```
