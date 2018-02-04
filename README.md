@@ -2,6 +2,10 @@
 
 Created decoupled and reusable bean converters, by simply annotating methods with `@BeanConverter`
 
+[![java-jdk](https://img.shields.io/badge/java%20jdk-1.8-brightgreen.svg)]()
+[![spring-boot](https://img.shields.io/badge/spring%20boot-1.5.9.Release-brightgreen.svg)]()
+[![circleci](https://circleci.com/gh/romajs/spring-bean-converter.svg)](https://circleci.com/gh/romajs/spring-bean-converter)
+
 ## Configuration
 
 ```xml
