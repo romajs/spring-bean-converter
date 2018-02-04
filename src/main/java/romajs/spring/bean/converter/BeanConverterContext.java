@@ -1,7 +1,7 @@
-package com.romajs.spring.bean.converter;
+package romajs.spring.bean.converter;
 
-import com.romajs.spring.bean.converter.model.BeanConverterKey;
-import com.romajs.spring.bean.converter.model.BeanConverterValue;
+import romajs.spring.bean.converter.model.BeanConverterKey;
+import romajs.spring.bean.converter.model.BeanConverterValue;
 import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;

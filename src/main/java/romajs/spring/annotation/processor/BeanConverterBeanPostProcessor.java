@@ -1,7 +1,7 @@
-package com.romajs.spring.annotation.processor;
+package romajs.spring.annotation.processor;
 
-import com.romajs.spring.annotation.BeanConverter;
-import com.romajs.spring.bean.converter.BeanConverterContext;
+import romajs.spring.annotation.BeanConverter;
+import romajs.spring.bean.converter.BeanConverterContext;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanPostProcessor;

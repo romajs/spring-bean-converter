@@ -16,7 +16,7 @@ Created decoupled and reusable bean converters, by simply annotating methods wit
 ```xml
 <dependencies>
     <dependency>
-        <groupId>com.romajs.spring</groupId>
+        <groupId>romajs.spring</groupId>
         <artifactId>spring-bean-converter</artifactId>
         <version>1.0-SNAPSHOT</version>
     </dependency>
@@ -26,7 +26,7 @@ Created decoupled and reusable bean converters, by simply annotating methods wit
 At your `@SpringBootApplication`, add the following:
 
 ```java
-@ComponentScan(basePackages = {"com.mypackage", "com.romajs.spring"})
+@ComponentScan(basePackages = {"com.mypackage", "romajs.spring"})
 ```
 
 ## Usage
@@ -36,9 +36,9 @@ At your `@SpringBootApplication`, add the following:
 public class SomeComponent {
 
     @Autowired
-    com.romajs.spring.bean.converter.BeanConverter beanConverter;
+    romajs.spring.bean.converter.BeanConverter beanConverter;
 
-    @com.romajs.spring.annotation.BeanConverter
+    @romajs.spring.annotation.BeanConverter
     public Response convertToResponse(SomeEntity someEntity) {
         Response response = new Response();
         response.setValue(someEntity.getValue());

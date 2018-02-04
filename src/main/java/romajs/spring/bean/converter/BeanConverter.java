@@ -1,8 +1,8 @@
-package com.romajs.spring.bean.converter;
+package romajs.spring.bean.converter;
 
-import com.romajs.spring.bean.converter.exception.BeanConverterNotFoundException;
-import com.romajs.spring.bean.converter.model.BeanConverterKey;
-import com.romajs.spring.bean.converter.model.BeanConverterValue;
+import romajs.spring.bean.converter.exception.BeanConverterNotFoundException;
+import romajs.spring.bean.converter.model.BeanConverterKey;
+import romajs.spring.bean.converter.model.BeanConverterValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.romajs.spring.bean.converter.model;
+package romajs.spring.bean.converter.model;
 
 public class BeanConverterKey {
 

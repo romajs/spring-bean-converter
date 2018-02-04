@@ -1,6 +1,6 @@
-package com.romajs.spring.bean.converter;
+package romajs.spring.bean.converter;
 
-import com.romajs.spring.bean.converter.exception.BeanConverterNotFoundException;
+import romajs.spring.bean.converter.exception.BeanConverterNotFoundException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +25,7 @@ public class BeanConverterTest {
     @Autowired
     BeanConverter beanConverter;
 
-    @com.romajs.spring.annotation.BeanConverter
+    @romajs.spring.annotation.BeanConverter
     public SecondClass secondClass(FirstClass foo) {
         SecondClass secondClass = new SecondClass();
         secondClass.bar = foo.foo.toString();
