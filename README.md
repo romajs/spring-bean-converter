@@ -4,6 +4,7 @@ Created decoupled and reusable bean converters, by simply annotating methods wit
 
 [![java-jdk](https://img.shields.io/badge/java%20jdk-1.8-brightgreen.svg)]()
 [![spring-boot](https://img.shields.io/badge/spring%20boot-1.5.9.Release-brightgreen.svg)]()
+[![codecov](https://codecov.io/gh/romajs/spring-bean-converter/graph/badge.svg)](https://codecov.io/gh/romajs/spring-bean-converter)
 [![circleci](https://circleci.com/gh/romajs/spring-bean-converter.svg)](https://circleci.com/gh/romajs/spring-bean-converter)
 
 ## Configuration
